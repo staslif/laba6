@@ -1,9 +1,7 @@
-﻿// Ввод размеров матрицы
 Console.Write("Введите количество строк матрицы: ");
 int rows = int.Parse(Console.ReadLine());
 Console.Write("Введите количество столбцов матрицы: ");
 int cols = int.Parse(Console.ReadLine());
-
 // Создание и заполнение двумерной матрицы
 int[,] matrix = new int[rows, cols];
 for (int i = 0; i < rows; i++)
@@ -14,7 +12,6 @@ for (int i = 0; i < rows; i++)
         matrix[i, j] = int.Parse(Console.ReadLine());
     }
 }
-
 int sum = 0;
 // Поиск и суммирование модулей отрицательных нечетных элементов
 for (int i = 0; i < rows; i++)
@@ -27,7 +24,5 @@ for (int i = 0; i < rows; i++)
         }
     }
 }
-
 Console.WriteLine($"Сумма модулей отрицательных нечетных элементов: {sum}");
-
 Console.ReadLine();
